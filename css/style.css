@@ -76,17 +76,29 @@ header nav ul li a {
 }
 
 section {
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin-top: 177px;
-    padding: 177px 36px 219px 85;
+    padding: 20px 86px 219px 10px;
 }
 
-section div img {
+section div {
+    display: flex;
+    justify-content: space-between;
+}
+
+section div div {
+    padding-left: 36px;
+    padding-right: 36px;
+
+}
+
+section div div img {
     width: 335px;
     height: 534px;
     left: 123px;
     top: 922px;
     border-radius: 31px;
-}
 
+}
