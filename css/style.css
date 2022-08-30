@@ -1,11 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 * {
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
     font-family: 'Comfortaa', sans-serif;
+    
 }
+body {
+    background: url(../img/pao-3.png),
+                #222;
+    background-position: center;
+    background-repeat: repeat;
+    
+    
 
+}
 header {
     display: flex;
     padding: 15px;
@@ -26,6 +36,7 @@ header nav ul li {
     border: 1px solid #222;
     border-radius: 12px;
     font-size: 1.5em;
+    font-weight: 700;
     margin-left: 10px;
     list-style: none;
 }
@@ -34,71 +45,142 @@ header nav ul li a {
     text-decoration: none;
     color: #222;
 }
-
-@media (max-width: 600px) {
-    header {
-        flex-direction: column;
-    }
+header nav ul li:hover {
+    background-color: #222;
+    transition: all .6s;
 }
-
+header nav ul li:hover a {
+    color: #fff;
+    transition: all .6s;
+}
+main {
+    display: flex;
+    flex-direction: column;
+}
 .landscape-main {
     width: 100%;
-    height: 532px;
-    left: 0px;
-    top: 80px;
+    background-image: url(../img/minas_paisagem.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    
 }
 
 .BlockMain {
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    right: 175px;
-    top: 200px;
+    width: 60%;
     color: white;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+    margin-right: 20px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: bold;
-    font-size: 21px;
+    font-size: 1.3em;
     line-height: 28px;
 }
 
-.title {
-    position: absolute;
-    width: 380px;
-    height: 42px;
-    left: 75px;
+section h1.title {
+    text-align: center;
     padding-top: 98px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    line-height: 42px;
-    color: #000000;
+    margin-bottom: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    color: #fff;
+}
+section .cards #card-1 {
+    background-image: url(../img/alexandre-brondino-70c72J41-yM-unsplash.jpg);
+    background-repeat: no-repeat;
+    
+}
+section .cards #card-2 {
+    background-image: url(../img/cânion.jpg);
+    background-repeat: no-repeat;
+    
+   
+}
+section .cards #card-3 {
+    background-image: url(../img/daniel-monteiro-si9IpVGUn-Y-unsplash.jpg);
+    background-repeat: no-repeat;
+   
 }
 
 section {
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin-top: 177px;
-    padding: 20px 86px 219px 10px;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    
 }
 
-section div {
+section .cards {
     display: flex;
+    align-items: stretch;
     justify-content: space-between;
 }
 
-section div div {
+section .cards .card {
     padding-left: 36px;
+    width: 350px;
+    height: 640px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-left: 15px;
+    border-radius: 31px;
     padding-right: 36px;
 
 }
 
-section div div img {
-    width: 335px;
-    height: 534px;
-    left: 123px;
-    top: 922px;
-    border-radius: 31px;
+section .cards .card p {
+    padding: 30px;
+    font-size: 1.2em;
+    font-weight: 700;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+section .video {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+section .video h2{
+    margin-top: 10px;
+    font-size: 2em;
+    color: #fff;
 
 }
+section .video iframe {
+    margin-top: 15px;
+    width: 90%;
+    border: 4px solid #ccc;
+    border-radius: 12px;
+}
+
+@media (max-width: 1200px) {
+    header {
+        flex-direction: column;
+    }
+    
+    section .cards{
+        flex-direction: column;
+    }
+    
+    section .cards .card {
+        margin-top: 15px;
+    }
+}
+
+
