@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" href="img/minas_icon.png" />
+    <script src="https://kit.fontawesome.com/f3897c2d3a.js" crossorigin="anonymous"></script>
     <title>Minas Gerais</title>
   </head>
   <body>
@@ -17,22 +18,22 @@
       <nav>
         <ul>
           <li>
-            <a href="">Home</a>
+            <a href="#home">Home</a>
           </li>
 
           <li>
-            <a href="">Curiosidades</a>
+            <a href="#curiosidade">Curiosidades</a>
           </li>
 
           <li>
-            <a href="">Vídeo</a>
+            <a href="#video">Vídeo</a>
           </li>
         </ul>
       </nav>
     </header>
 
     <main>
-     <div class="landscape-main">
+    <div id="home" class="landscape-main">
       
         <div class="BlockMain">
           <p>
@@ -45,9 +46,9 @@
             João del Rei.
           </p>
         </div>
-     </div>
+    </div>
       <!---->
-      <section>
+      <section id="curiosidade">
         <h1 class="title">Curiosidades do estado</h1>
         <div class="cards">
           <div class="card" id="card-1">
@@ -90,7 +91,7 @@
           </div>
         </div>
 
-        <div class="video">
+        <div  id="video"class="video">
           <h2>Conheça a nossa Capital</h2>
           <iframe height="500" 
           src="https://www.youtube.com/embed/LA9ybU0-olk" 
@@ -101,5 +102,22 @@
         </div>
       </section>
     </main>
+    <footer>
+      <section class="footer">
+          <p>Todos os direitos reservados a front end 1</p>
+          <img src="./img/minas_icon.png" alt="icon minas">
+        <nav class="button">
+          <a href="https://github.com/" target="_blank">
+              <i class="fa-brands fa-github"></i></a>
+          
+              <a href="https://github.com/MatheusArtilles"target="_blank">
+              <i class="fa-brands fa-github"></i></a> 
+          
+              <a href="https://github.com/deysebonisegnia" target="_blank">
+              <i class="fa-brands fa-github"></i></a>
+          
+              </nav>
+      </section>
+    </footer>
   </body>
 </html>
